@@ -1,0 +1,205 @@
+/* typos*/
+@import url("C:\Users\mique\OneDrive\Escritorio\Trabajo Lenguaje de Marcas\Typos CSS.css");
+/*cambio de contenido smooth*/
+html {
+  scroll-behavior: smooth;
+  }
+body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  background-color: #141F31;
+  }  
+* {
+  box-sizing: border-box;  
+  }
+  .tipoItaliana{
+    font-family: Italiana, serif;
+  }
+  .tipoGalaxyGlide{
+    font-family: 'Bai Jamjuree', sans-serif;
+  }
+
+  .parallax {
+    background-image: url("https://newspaceespana.com/wp-content/uploads/newspace-portada.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/*título formulario*/
+.contacto h1 {
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+.contacto h1 span {
+  font-weight: 400;
+  font-size: 150%;
+  word-spacing: 3px;
+  line-height: 2em;
+  padding-bottom: 0.35em;
+  color: #ffffff;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/*Formulario*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #141F31;
+  border-radius: 4px;
+  box-sizing:border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #141F31;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0a038dc1;
+}
+
+input[type=reset] {
+  background-color: #141F31;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #011e9fe6;
+}
+
+input[type=file] {
+  background-color: #ffffff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=file]:hover {
+  background-color: #ffffff;
+}
+
+.formulario {
+  border-radius: 5px;
+  background-color: #ffffffa8;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+/*ciudad*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    background-color: rgb(8, 67, 126) !important;
+    color: #ffffff;
+}
+
+/*Inglés*/
+.contenedor {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+    .contenedor input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .contenedor:hover input ~ .checkmark {
+    background-color: #314a72;
+  }
+  .contenedor input:checked ~ .checkmark {
+    background-color: #141F31;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .contenedor input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .contenedor .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.233);
+  }
+
+  .politica{
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  .ph2h3 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #011e9fe6;
+  }
